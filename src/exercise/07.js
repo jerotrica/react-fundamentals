@@ -4,10 +4,10 @@
 import * as React from 'react'
 
 const allItems = [
-  {id: 'apple', value: '🍎 apple'},
-  {id: 'orange', value: '🍊 orange'},
-  {id: 'grape', value: '🍇 grape'},
-  {id: 'pear', value: '🍐 pear'},
+  { id: 'apple', value: '🍎 apple' },
+  { id: 'orange', value: '🍊 orange' },
+  { id: 'grape', value: '🍇 grape' },
+  { id: 'pear', value: '🍐 pear' },
 ]
 
 function App() {

@@ -3,8 +3,8 @@
 
 import * as React from 'react'
 
-function UsernameForm({onSubmitUsername}) {
-  const usernameInputRef = React.useRef()
+function UsernameForm({ onSubmitUsername }) {
+  //const usernameInputRef = React.useRef()
   const [username, setUsername] = React.useState('')
 
   function handleSubmit(event) {
@@ -13,7 +13,7 @@ function UsernameForm({onSubmitUsername}) {
   }
 
   function handleChange(event) {
-    const {value} = event.target
+    const { value } = event.target
     setUsername(value.toLowerCase())
   }
 
@@ -24,12 +24,12 @@ function UsernameForm({onSubmitUsername}) {
         <input
           id="usernameInput"
           type="text"
-          ref={usernameInputRef}
+          //ref={usernameInputRef}
           onChange={handleChange}
           value={username}
         />
       </div>
-      <button type="submit">Submiss</button>
+      <button type="submit">Submit</button>
     </form>
   )
 }
