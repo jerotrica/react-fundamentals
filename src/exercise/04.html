@@ -22,6 +22,7 @@
         }
       },
     } */
+
     function Message({subject, greeting}) {
       return (
         <div className="message">
@@ -40,8 +41,8 @@
       // this <>  </> is for react Fragments. supress the div inr order to create
       // working html elements (e.g. a table, whit columns in it, you need to not have a div)
       <>
-        <Message greeting={test} subject="World" />
-        <Message greeting="Goodbye" subject="World" />
+        <Message greeting="Hello" subject="World" />
+        <Message greeting="Goodbye" subject="Worlds" />
       </>
     )
     ReactDOM.createRoot(document.getElementById('root')).render(element)
